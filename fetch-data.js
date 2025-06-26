@@ -19,8 +19,8 @@ async function fetchUserData () {
 
     } catch {
         dataContainer.innerHTML= "";
-        dataContainer.textContent = "Failed to load user data";
+        dataContainer.textContent = "Failed to load user data.";
     }
 } 
 
-form.addEventListener (DOMContentLoaded, fetchUserData());
+document.addEventListener ("DOMContentLoaded", fetchUserData);
